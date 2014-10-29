@@ -1,8 +1,17 @@
 package com.interview;
 
 public class FamilyTree {
-
-	public void addMember(Person newmember){
+    Person Grandparent;
+	public FamilyTree(Person grandparent) {
+		Grandparent = grandparent;
+	}
+	
+	public FamilyTree(String grandparentname) {
+		Person grandParent = new Person( grandparentname);
+		this.Grandparent=grandParent;
+	}
+	
+	public void addMember(Person newmember,Person parent){
 		
 	}
 	public void deleteMember(Person member){
